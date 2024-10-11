@@ -1,0 +1,33 @@
+.card {
+    background-color: #EBE4DC; /* Cor do fundo do card */
+    border-radius: 16px; /* Borda arredondada */
+    width: 200px; /* Largura fixa */
+    height: 254px; /* Altura fixa */
+    padding: 10px;
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    flex-direction: column;
+    justify-content: flex-start; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+  
+  .texto {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #745A43; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: 600;
+    font-family: "Arial", sans-serif; /* Fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 8px;
+  }
+
+  .imagem{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+  }
+  
