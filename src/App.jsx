@@ -2,7 +2,7 @@ import './App.css';
 import Lottie from 'lottie-react';
 import Hello from './assets/hello.json';
 import Card from './components/card'; // Importa o componente Card
-import Contato from './components/Contato'; // Importa o componente Contato
+import Contato from './components/contato'; // Importa o componente Contato
 
 function App() {
   return (
