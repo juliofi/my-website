@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: flex-start; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
+    border: 1px solid #CDBAA9;
   }
   
   .texto {
@@ -16,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #745A43; /* Cor do texto */
+    color: #C1A994; /* Cor do texto */
     font-size: 24px; /* Tamanho da fonte */
     font-weight: 600;
     font-family: "Arial", sans-serif; /* Fonte */
