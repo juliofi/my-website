@@ -1,5 +1,5 @@
 .card {
-    background-color: #EBE4DC; /* Cor do fundo do card */
+    background-color: #F3EDE6; /* Cor do fundo do card */
     border-radius: 16px; /* Borda arredondada */
     width: 200px; /* Largura fixa */
     height: 254px; /* Altura fixa */
@@ -19,8 +19,7 @@
     justify-content: center;
     color: #C1A994; /* Cor do texto */
     font-size: 24px; /* Tamanho da fonte */
-    font-weight: 600;
-    font-family: "Arial", sans-serif; /* Fonte */
+    font-weight: 400;
     text-align: center; /* Centraliza o texto */
     margin-top: 8px;
   }
