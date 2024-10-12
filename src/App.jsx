@@ -16,8 +16,8 @@ function App() {
           />
           <div className="cardsContainer">
             <Card nome="Portifólio" />
-            <Card nome="Trajetória" />
-            <Card nome="Certificações" />
+            <Card nome="Conhecimentos" />
+            <Card nome="Sobre mim" />
           </div>
           <Contato />
         </div>
