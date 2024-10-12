@@ -1,6 +1,6 @@
 import './App.css';
 import Lottie from 'lottie-react';
-import Hello from './assets/hello.json';
+import Anim from './assets/▶ anim.json';
 import Card from './components/card'; // Importa o componente Card
 import Contato from './components/contato'; // Importa o componente Contato
 
@@ -8,7 +8,12 @@ function App() {
   return (
     <>
       <div className="container">
-        <Lottie loop={true} animationData={Hello} style={{ width: 300, margin: '0 auto' }} />
+        <Lottie
+            animationData={Anim}
+            loop={false} // Desabilita o loop
+            onComplete={() => setIsAnimationComplete(true)} // Define que, ao finalizar, ajusta o estado
+            className="lottie"
+          />
           <div className="cardsContainer">
             <Card nome="Portifólio" />
             <Card nome="Trajetória" />

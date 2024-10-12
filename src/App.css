@@ -19,7 +19,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-bottom: 64px;
+  gap: 64px;
+}
+
+.lottie{
+  width: 300px;
+  margin: 0 auto;
 }
 
 
