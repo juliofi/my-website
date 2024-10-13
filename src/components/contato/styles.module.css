@@ -11,6 +11,7 @@
   .icon {
     color: #D9CBBF; /* Cor dos ícones */
     text-decoration: none; /* Remove o sublinhado do link */
+    cursor: pointer;
   }
   
   .icon:hover {
@@ -34,6 +35,7 @@
   .ancora {
     color: #D9CBBF; /* Cor padrão */
     text-decoration: none; /* Remove o sublinhado */
+    cursor: pointer;
   }
   
   .ancora:hover {
