@@ -1,27 +1,25 @@
 import './App.css';
-import Lottie from 'lottie-react';
-import Anim from './assets/▶ anim.json';
-import Card from './components/card'; // Importa o componente Card
-import Contato from './components/contato'; // Importa o componente Contato
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/home'; // Página inicial (Home)
+import Portifolio from './pages/portifolio'; // Página Portifolio
+import Conhecimentos from './pages/conhecimentos'; // Página Conhecimentos
+import SobreMim from './pages/sobremim'; // Página Sobre Mim
 
 function App() {
   return (
-    <>
-      <div className="container">
-        <Lottie
-            animationData={Anim}
-            loop={false} // Desabilita o loop
-            onComplete={() => setIsAnimationComplete(true)} // Define que, ao finalizar, ajusta o estado
-            className="lottie"
-          />
-          <div className="cardsContainer">
-            <Card nome="Portifólio" />
-            <Card nome="Conhecimentos" />
-            <Card nome="Sobre mim" />
-          </div>
-          <Contato />
-        </div>
-    </>
+
+    <div className='container'>
+        <Router>
+        <Routes>
+          {/* Rota inicial para Home */}
+          <Route path="/" element={<Home />} />
+          {/* Outras páginas */}
+          <Route path="/portifolio" element={<Portifolio />} />
+          <Route path="/conhecimentos" element={<Conhecimentos />} />
+          <Route path="/sobremim" element={<SobreMim />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

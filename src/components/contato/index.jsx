@@ -6,10 +6,10 @@ const Contato = () => {
   return (
     <div className={styles.container}>
       <a href="https://github.com/juliopontocom" target="_blank" rel="noopener noreferrer" className={styles.icon}>
-        <FaGithub size={60} />
+        <FaGithub size={45} />
       </a>
       <a href="https://linkedin.com/in/juliocpsf" target="_blank" rel="noopener noreferrer" className={styles.icon}>
-        <FaLinkedin size={69} />
+        <FaLinkedin size={45} />
       </a>
       <div className={styles.info}>
         <a href="" className={styles.ancora}>juliocpsf@gmail.com</a>
