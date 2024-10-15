@@ -12,6 +12,10 @@ function Fase({ titulo, data, descricao, imagem }) {
                 {data}
             </div>
         </div>
+        <div className={styles.texto}>
+            {descricao}
+        </div>
+        <img src={imagem}  className={styles.imagem} alt="nao achou path" />
       
     </div>
   );

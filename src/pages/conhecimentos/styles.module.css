@@ -81,7 +81,7 @@
   height: 12px;
   background-color: #897869;
   border-radius: 50%;
-  margin-bottom: 300px;
+  margin-bottom: 290px;
 }
 
 .bullet2 {
@@ -89,7 +89,7 @@
   height: 12px;
   background-color: #897869;
   border-radius: 50%;
-  margin-bottom: 300px;
+  margin-bottom: 290px;
 }
 
 .bullet3 {
@@ -97,7 +97,7 @@
   height: 12px;
   background-color: #897869;
   border-radius: 50%;
-  margin-bottom: 300px;
+  margin-bottom: 290px;
 }
 
 .bullet4 {
@@ -105,7 +105,7 @@
   height: 12px;
   background-color: #897869;
   border-radius: 50%;
-  margin-bottom: 300px;
+  margin-bottom: 290px;
 }
 
 /* Ajusta o conteúdo da linha do tempo */
@@ -120,26 +120,22 @@
   /* MARGEM FASE */
   width: 100%;
   height: 300px;
-  border: 1px solid red;
 }
 
 .fase2 {
   /* MARGEM FASE */
   width: 100%;
   height: 300px;
-  border: 1px solid red;
 }
 
 .fase3 {
   /* MARGEM FASE */
   width: 100%;
   height: 300px;
-  border: 1px solid red;
 }
 
 .fase4 {
   /* MARGEM FASE */
   width: 100%;
   height: 300px;
-  border: 1px solid red;
 }
