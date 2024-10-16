@@ -1,6 +1,6 @@
 .lottie {
-  width: 146px; /* Ajuste o tamanho da animação */
-  height: 90px;
+  width: 117px; /* Ajuste o tamanho da animação */
+  height: 70px;
   margin: 0 auto; /* Centraliza a animação */
 }
 
@@ -31,6 +31,10 @@
   font-size: 24px;
   padding: 16px 0px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e2d7ce;
 }
 
 .bodyContainer {
@@ -38,7 +42,8 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 70%;
+  padding-left: 64px;
+  width: 80%;
 }
 
 .line {
