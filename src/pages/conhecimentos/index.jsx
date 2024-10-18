@@ -3,7 +3,6 @@ import Lottie from 'lottie-react';
 import HeadAnimation from '../../assets/head.json'; // Importa o arquivo JSON da animação Lottie
 import { Link } from 'react-router-dom';
 import styles from './styles.module.css'; // Importa o CSS Modules
-import Seta from '../../components/seta';
 import Fase from '../../components/fases';
 import puc from '../../assets/PUCRS.jpeg'; // Importa a imagem
 import poo from '../../assets/poo.jpg';
@@ -18,12 +17,11 @@ import CertificadosRocketseat from '../../components/certificadosRocketseat';
 function Conhecimentos() {
   return (
     <div className={styles.conhecimentosContainer}>
-      {/* Header fixado com animação Lottie */}
       <header className={styles.header}>
         <Link to="/" className={styles.lottieLink}>
           <Lottie
             animationData={HeadAnimation}
-            loop={false} // Desabilita o loop da animação
+            loop={false}
             className={styles.lottie}
           />
         </Link>
