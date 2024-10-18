@@ -12,7 +12,8 @@ import ages from '../../assets/ages.jpg';
 import rocketseat from '../../assets/rocketseat.jpg';
 import destaque from '../../assets/destaque.jpg';
 import memorisely from '../../assets/memorisely.jpg';
-import CertificadosAlura from '../../components/certificadosAlura'
+import CertificadosAlura from '../../components/certificadosAlura';
+import CertificadosRocketseat from '../../components/certificadosRocketseat';
 
 function Conhecimentos() {
   return (
@@ -82,6 +83,7 @@ function Conhecimentos() {
                 imagem={rocketseat}
               />
             </div>
+            <CertificadosRocketseat></CertificadosRocketseat>
             <div className={styles.fase6}>
               <Fase
                 titulo={<><span>Projeto</span><br /><span>Destaque</span></>}
