@@ -82,7 +82,7 @@ function Conhecimentos() {
             </div>
             <div className={styles.fase6}>
               <Fase
-                titulo="Projeto Destaque"
+                titulo={<><span>Projeto</span><br /><span>Destaque</span></>}
                 data="04/07/2024"
                 descricao="No final do semestre acontece uma votação para eleger o melhor projeto da AGES e felizmente fomos premiados! "
                 imagem={destaque}
