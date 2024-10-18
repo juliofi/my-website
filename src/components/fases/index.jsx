@@ -4,7 +4,7 @@ import styles from './styles.module.css'; // Importa o CSS Modules
 function Fase({ titulo, data, descricao, imagem }) {
   return (
     <div className={styles.timelineItem}>
-        <div className={styles.nome}>
+        <div className={styles.esquerda}>
             <div className={styles.titulo}>
                 {titulo}
             </div>
@@ -12,11 +12,13 @@ function Fase({ titulo, data, descricao, imagem }) {
                 {data}
             </div>
         </div>
+
+        <div className={styles.direita}>
         <div className={styles.texto}>
             {descricao}
         </div>
         <img src={imagem}  className={styles.imagem} alt="nao achou path" />
-      
+        </div>
     </div>
   );
 }

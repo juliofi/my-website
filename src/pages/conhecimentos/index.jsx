@@ -9,6 +9,9 @@ import puc from '../../assets/PUCRS.jpeg'; // Importa a imagem
 import poo from '../../assets/poo.jpg';
 import ferias from '../../assets/ferias.jpg';
 import ages from '../../assets/ages.jpg';
+import rocketseat from '../../assets/rocketseat.jpg';
+import destaque from '../../assets/destaque.jpg';
+import memorisely from '../../assets/memorisely.jpg';
 
 function Conhecimentos() {
   return (
@@ -29,6 +32,9 @@ function Conhecimentos() {
           <div className={styles.bullet2}></div>
           <div className={styles.bullet3}></div>
           <div className={styles.bullet4}></div>
+          <div className={styles.bullet5}></div>
+          <div className={styles.bullet6}></div>
+          <div className={styles.bullet7}></div>
         </div>
         <div className={styles.timelineContainer}>
           <div className={styles.fasesContainer}>
@@ -61,8 +67,33 @@ function Conhecimentos() {
               <Fase
                 titulo="AGES"
                 data="26/02/2024"
-                descricao="Já aos 19 anos, no terceiro semestre, comecei a cursar a cadeira ”AGES 1” (Agência Experimental de Software), que foi para mim a melhor cadeira da faculdade até hoje. Nela, junto com meu time, recebemos o cliente Vinicius da Rosa que foi nosso stakeholder para o projeto Polymatech."
+                descricao="Já aos 19 anos, no terceiro semestre, comecei a cursar a cadeira AGES 1 (Agência Experimental de Software), que foi para mim a melhor cadeira da faculdade até hoje. Nela, recebemos um cliente e trabalhamos no método SCRUM para desenvolver um MVP da proposta trazida pelo cliente. O nosso projeto,
+                Polimatech, era uma plataforma para vestibulandos e estudantes do ensino médio"
                 imagem={ages}
+              />
+            </div>
+            <div className={styles.fase5}>
+              <Fase
+                titulo="RocketSeat"
+                data="23/03/2024"
+                descricao="Após decidirmos as tecnologias na AGES, senti ainda mais a necessidade de aprender React, já queria dar esse passo no desenvolvimento web e assinei a plataforma da RocketSeat, onde já havia participado de um evento gratuito e gostei muito da didática deles. Durante esse terceiro semestre pude me aprofundar muito em React para o front-end e gostei muito de poder trabalhar em equipe na AGES"
+                imagem={rocketseat}
+              />
+            </div>
+            <div className={styles.fase6}>
+              <Fase
+                titulo="Projeto Destaque"
+                data="04/07/2024"
+                descricao="No final do semestre acontece uma votação para eleger o melhor projeto da AGES e felizmente fomos premiados! "
+                imagem={destaque}
+              />
+            </div>
+            <div className={styles.fase7}>
+              <Fase
+                titulo="Memorisely"
+                data="04/07/2024"
+                descricao="Depois do projeto da AGES me interessei muito por UI Design, queria aprender boas práticas para criar uma interface intuitiva e aprimorar minhas habilidades com o Figma. Foi aí que assinei o Memorisely e pude me aprofundar muito com a plataforma sobre UX/UI Design."
+                imagem={memorisely}
               />
             </div>
           </div>
