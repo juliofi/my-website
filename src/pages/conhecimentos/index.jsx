@@ -12,6 +12,7 @@ import ages from '../../assets/ages.jpg';
 import rocketseat from '../../assets/rocketseat.jpg';
 import destaque from '../../assets/destaque.jpg';
 import memorisely from '../../assets/memorisely.jpg';
+import CertificadosAlura from '../../components/certificadosAlura'
 
 function Conhecimentos() {
   return (
@@ -63,12 +64,13 @@ function Conhecimentos() {
                 imagem={ferias}
               />
             </div>
+            <CertificadosAlura></CertificadosAlura>
             <div className={styles.fase4}>
               <Fase
                 titulo="AGES"
                 data="26/02/2024"
                 descricao="Já aos 19 anos, no terceiro semestre, comecei a cursar a cadeira AGES 1 (Agência Experimental de Software), que foi para mim a melhor cadeira da faculdade até hoje. Nela, recebemos um cliente e trabalhamos no método SCRUM para desenvolver um MVP da proposta trazida pelo cliente. O nosso projeto,
-                Polimatech, era uma plataforma para vestibulandos e estudantes do ensino médio"
+                Polimatech, era uma plataforma para vestibulandos e estudantes do ensino médio."
                 imagem={ages}
               />
             </div>
@@ -76,7 +78,7 @@ function Conhecimentos() {
               <Fase
                 titulo="RocketSeat"
                 data="23/03/2024"
-                descricao="Após decidirmos as tecnologias na AGES, senti ainda mais a necessidade de aprender React, já queria dar esse passo no desenvolvimento web e assinei a plataforma da RocketSeat, onde já havia participado de um evento gratuito e gostei muito da didática deles. Durante esse terceiro semestre pude me aprofundar muito em React para o front-end e gostei muito de poder trabalhar em equipe na AGES"
+                descricao="Após decidirmos as tecnologias na AGES, senti ainda mais a necessidade de aprender React, já queria dar esse passo no desenvolvimento web e assinei a plataforma da RocketSeat, onde já havia participado de um evento gratuito e gostei muito da didática deles. Durante esse terceiro semestre pude me aprofundar muito em React para o front-end e gostei muito de poder trabalhar em equipe na AGES."
                 imagem={rocketseat}
               />
             </div>
