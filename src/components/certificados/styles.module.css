@@ -1,0 +1,18 @@
+.container {
+    width: 460px;
+    padding: 30px;
+    background-color: #F3EDE6;
+    border-radius: 16px;
+    border: 1px solid #CDBAA9;
+    overflow: hidden;
+  }
+  
+  .certificado {
+    margin-right: 20px;
+  }
+  
+  .certificado img {
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
