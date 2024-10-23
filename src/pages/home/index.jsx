@@ -5,6 +5,9 @@ import Card from '../../components/card'; // Importa o componente Card
 import Contato from '../../components/contato'; // Importa o componente Contato
 import { Link } from 'react-router-dom';
 import styles from './styles.module.css'
+import Conhecimentos from '../../assets/conhecimentos.png'
+import Portifolio from '../../assets/portifolio.png'
+import Sobremim from '../../assets/sobremim.png'
 
 function Home() {
   return (
@@ -17,13 +20,13 @@ function Home() {
       <div className={styles.cardsContainer}>
         {/* Links para as páginas */}
         <Link to="/conhecimentos">
-          <Card nome="Conhecimentos" />
+          <Card nome="Conhecimentos" imagem={Conhecimentos}/>
         </Link>
         <Link to="/portifolio">
-          <Card nome="Portifólio" />
+          <Card nome="Portifólio" imagem={Portifolio}/>
         </Link>
         <Link to="/sobremim">
-          <Card nome="Sobre mim" />
+          <Card nome="Sobre mim" imagem={Sobremim}/>
         </Link>
       </div>
       <Contato />

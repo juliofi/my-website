@@ -1,13 +1,10 @@
-.lottie {
-  width: 117px; /* Ajuste o tamanho da animação */
-  height: 70px;
-  margin: 0 auto; /* Centraliza a animação */
+.link svg {
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.lottieLink {
-  display: inline-block; /* Torna o link clicável em volta da animação */
-  cursor: pointer; /* Mostra um cursor de clique */
-  text-decoration: none; /* Remove a decoração de link */
+.link svg:hover {
+  transform: scale(1.1);
 }
 
 .conhecimentosContainer {
@@ -25,37 +22,36 @@
   position: -webkit-sticky; /* Para Safari */
   position: sticky;
   top: 0;
-  background-color: #ECE4DE;
   z-index: 1000; /* Garantir que o header fique acima do restante do conteúdo */
   text-align: center;
   font-size: 24px;
-  padding: 16px 0px;
+  padding: 60px 0px 0px 160px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #e2d7ce;
+  justify-content: flex-start;
 }
 
 .bodyContainer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
-  padding-left: 64px;
+  justify-content: center;
   width: 80%;
-  border: 1px solid red;
+  gap: 60px;
+  padding-right: 144px;
+
 }
 
 .line {
+  margin-top: 268px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 3px;
+  width: 4px;
   background-color: #897869;
   border-radius: 10px;
-  margin-top: 104px;
 }
 
 .timelineContainer {
@@ -131,21 +127,20 @@
   border-radius: 50%;
 }
 
-.fasesContainer {
+
+
+.titulos{
+  margin-top: 254px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-  gap: 64px;
+
 }
 
-.fase1, .fase2, .fase3, .fase4, .fase5, .fase6{
-  width: 100%;
-  height: 240px;
+
+
+.cards{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.fase7{
-  width: 100%;
-  height: 240px;
-  margin-bottom: 160px;
-}

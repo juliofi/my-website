@@ -1,3 +1,11 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
 .card {
     background-color: #F3EDE6; /* Cor do fundo do card */
     border-radius: 16px; /* Borda arredondada */
@@ -8,7 +16,6 @@
     align-items: center; /* Centraliza verticalmente */
     border: 1px solid #CDBAA9;
     gap: 30px;
-    cursor: pointer;
   }
   
   .texto {
@@ -31,4 +38,21 @@
     border-radius: 16px;
     border: 1px solid #CDBAA9;
   }
+
+  .audio{
+    margin-top: 360px;
+    width: 80px;
+  }
+
+  .audio svg {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .audio svg:hover {
+    transform: scale(1.1);
+  }
+
+
+
   

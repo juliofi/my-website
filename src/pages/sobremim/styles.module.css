@@ -38,11 +38,11 @@
   align-items: flex-start;
   justify-content: center;
   width: 80%;
-  border: 1px solid red;
   gap: 60px;
 }
 
 .line {
+  margin-top: 288px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,34 +125,20 @@
   border-radius: 50%;
 }
 
-.fasesContainer {
+
+
+.titulos{
+  margin-top: 274px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-  gap: 64px;
-}
 
-.fase1, .fase2, .fase3, .fase4, .fase5, .fase6{
-  width: 100%;
-  height: 240px;
-}
-
-.fase7{
-  width: 100%;
-  height: 240px;
-  margin-bottom: 160px;
 }
 
 
-.teste1{
-  width: 100px;
-  height: 200px;
-  background-color: #FFFFFF;
+
+.cards{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
-.teste2{
-  width: 100px;
-  height: 100px;
-  background-color: #FFFFFF;
-}
