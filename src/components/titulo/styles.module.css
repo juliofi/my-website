@@ -1,0 +1,17 @@
+.texto{
+    border: 1px solid red;
+}
+
+.titulo{
+    color: #897869;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.subtitulo{
+    color: #B09A87;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+}

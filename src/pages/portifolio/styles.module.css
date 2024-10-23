@@ -1,46 +1,93 @@
 .portifolioContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
 
-  .header {
-    position: -webkit-sticky; /* Para Safari */
-    position: sticky;
-    top: 0;
-    background-color: #ECE4DE;
-    z-index: 1000; /* Garantir que o header fique acima do restante do conteúdo */
-    text-align: center;
-    font-size: 24px;
-    padding: 16px 0px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid #e2d7ce;
-  }
-  
-  .lottie {
-    width: 117px; /* Ajuste o tamanho da animação */
-    height: 70px;
-    margin: 0 auto; /* Centraliza a animação */
-  }
-  
-  .lottieLink {
-    display: inline-block; /* Torna o link clicável em volta da animação */
-    cursor: pointer; /* Mostra um cursor de clique */
-    text-decoration: none; /* Remove a decoração de link */
-  }
+.backButtonContainer {
+  width: 80%;
+  height: 160px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
 
-  
-  .projetosContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-  }
-  
+.backButton {
+  position: sticky;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.backButton svg {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.backButton svg:hover {
+  transform: scale(1.1);
+}
+
+.timelineContainer {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #897869;
+}
+
+.timelineItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 40px 0;
+  position: relative;
+}
+
+.timelinePoint {
+  position: absolute;
+  left: calc(50% - 8px); /* Centraliza a bolinha em relação à linha */
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #897869;
+  border-radius: 50%;
+}
+
+.title {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.card {
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.titulos {
+  /* Estilos para o título */
+}
+
+.cards {
+  /* Estilos para o card */
+}
