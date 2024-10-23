@@ -19,12 +19,36 @@ import certi2 from '../../assets/certi2.jpg';
 import certi3 from '../../assets/certi3.jpg';
 import certi4 from '../../assets/certi4.jpg';
 import certi5 from '../../assets/certi5.jpg';
+import certi6 from '../../assets/certi6.jpg';
+import certi7 from '../../assets/certi7.jpg';
+import certi8 from '../../assets/certi8.jpg';
+import certi9 from '../../assets/certi9.jpg';
+import certi10 from '../../assets/certi10.jpg';
+import certi11 from '../../assets/certi11.jpg';
+import certi12 from '../../assets/certi12.jpg';
+import certi13 from '../../assets/certi13.jpg';
+import certi14 from '../../assets/certi14.jpg';
+import certi15 from '../../assets/certi15.jpg';
+import certi16 from '../../assets/certi16.jpg';
+import certi17 from '../../assets/certi17.jpg';
+import certi18 from '../../assets/certi18.jpg';
+import certi19 from '../../assets/certi19.jpg';
+import certi20 from '../../assets/certi20.jpg';
+import certi21 from '../../assets/certi21.jpg';
+import certi22 from '../../assets/certi22.jpg';
+import certi23 from '../../assets/certi23.jpg';
 
 
 
 function Conhecimentos() {
   const certificadosAlura = [certi1, certi2, certi3];
   const certificadosRocketseat = [certi4, certi5];
+  const certificadosMemorisely = [
+    certi6, certi7, certi8, certi9, certi10,
+    certi11, certi12, certi13, certi14, certi15,
+    certi16, certi17, certi18, certi19, certi20,
+    certi21, certi22, certi23
+  ];
   return (
 
     <div className={styles.conhecimentosContainer}>
@@ -50,7 +74,7 @@ function Conhecimentos() {
           <Titulo margem="956px" titulo="Férias" subtitulo="13/12/2023" />
           <Titulo margem="682px" titulo="AGES" subtitulo="26/02/2024" />
           <Titulo margem="1010px" titulo="Rocketseat" subtitulo="23/03/2024" />
-          <Titulo margem="532px" titulo="Projeto Destaque" subtitulo="04/07/2024" />
+          <Titulo margem="540px" titulo="Projeto Destaque" subtitulo="04/07/2024" />
           <Titulo margem="160px" titulo="Memorisely" subtitulo="04/07/2024" />
         </div>
         <div className={styles.line}>
@@ -60,6 +84,9 @@ function Conhecimentos() {
           <Bolinha margem="740px" />
           <Bolinha margem="1080px" />
           <Bolinha margem="624px" />
+          <div className={styles.bolinhaFinal} />
+
+
 
 
         </div>
@@ -73,7 +100,8 @@ Polimatech, era uma plataforma para vestibulandos e estudantes do ensino médio.
           <CardTimeline margem="60px" imagem={rocketseat} texto="Após decidirmos as tecnologias na AGES, senti ainda mais a necessidade de aprender React, já queria dar esse passo no desenvolvimento web e assinei a plataforma da RocketSeat, onde já havia participado de um evento gratuito e gostei muito da didática deles. Durante esse terceiro semestre pude me aprofundar muito em React para o front-end e gostei muito de poder trabalhar em equipe na AGES." />
           <Certificados margem="160px" certificadosFotos={certificadosRocketseat} />
           <CardTimeline margem="160px" imagem={destaque} texto="No final do semestre acontece uma votação para eleger o melhor projeto da AGES e felizmente fomos premiados! " />
-          <CardTimeline margem="160px" imagem={memorisely} texto="Depois do projeto da AGES me interessei muito por UI Design, queria aprender boas práticas para criar uma interface intuitiva e aprimorar minhas habilidades com o Figma. Foi aí que assinei o Memorisely e pude me aprofundar muito com a plataforma sobre UX/UI Design." />
+          <CardTimeline margem="60px" imagem={memorisely} texto="Depois do projeto da AGES me interessei muito por UI Design, queria aprender boas práticas para criar uma interface intuitiva e aprimorar minhas habilidades com o Figma. Foi aí que assinei o Memorisely e pude me aprofundar muito com a plataforma sobre UX/UI Design." />
+          <Certificados margem="80px" certificadosFotos={certificadosMemorisely} />
         </div>
       </div>
     </div>

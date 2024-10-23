@@ -13,16 +13,20 @@
   align-items: center;
   justify-content: flex-start;
   color: #5A4634;
-  min-height: 100vh; /* Garante que a página ocupe pelo menos a altura total da viewport */
+  min-height: 100vh;
+  /* Garante que a página ocupe pelo menos a altura total da viewport */
   width: 100%;
-  overflow-x: hidden; /* Remove qualquer barra de rolagem horizontal */
+  overflow-x: hidden;
+  /* Remove qualquer barra de rolagem horizontal */
 }
 
 .header {
-  position: -webkit-sticky; /* Para Safari */
+  position: -webkit-sticky;
+  /* Para Safari */
   position: sticky;
   top: 0;
-  z-index: 1000; /* Garantir que o header fique acima do restante do conteúdo */
+  z-index: 1000;
+  /* Garantir que o header fique acima do restante do conteúdo */
   text-align: center;
   font-size: 24px;
   padding: 60px 0px 0px 160px;
@@ -39,7 +43,7 @@
   justify-content: center;
   width: 80%;
   gap: 60px;
-  padding-right: 144px;
+  padding-right: 116px;
 
 }
 
@@ -60,7 +64,8 @@
   align-items: flex-start;
   gap: 32px;
   width: 100%;
-  max-width: 100%; /* Garante que o conteúdo não ultrapasse a largura da tela */
+  max-width: 100%;
+  /* Garante que o conteúdo não ultrapasse a largura da tela */
 }
 
 .timelineItem {
@@ -72,7 +77,7 @@
 
 
 
-.bullet1{
+.bullet1 {
   width: 12px;
   height: 12px;
   background-color: #897869;
@@ -80,7 +85,7 @@
   margin-bottom: 292px;
 }
 
-.bullet2{
+.bullet2 {
   width: 12px;
   height: 12px;
   background-color: #897869;
@@ -88,7 +93,7 @@
   margin-bottom: 292px;
 }
 
-.bullet3{
+.bullet3 {
   width: 12px;
   height: 12px;
   background-color: #897869;
@@ -96,7 +101,7 @@
   margin-bottom: 552px;
 }
 
-.bullet4{
+.bullet4 {
   width: 12px;
   height: 12px;
   background-color: #897869;
@@ -104,7 +109,7 @@
   margin-bottom: 292px;
 }
 
-.bullet5{
+.bullet5 {
   width: 12px;
   height: 12px;
   background-color: #897869;
@@ -112,7 +117,7 @@
   margin-bottom: 552px;
 }
 
-.bullet6{
+.bullet6 {
   width: 12px;
   height: 12px;
   background-color: #897869;
@@ -120,7 +125,7 @@
   margin-bottom: 292px;
 }
 
-.bullet7{
+.bullet7 {
   width: 12px;
   height: 12px;
   background-color: #897869;
@@ -129,7 +134,7 @@
 
 
 
-.titulos{
+.titulos {
   margin-top: 254px;
   display: flex;
   flex-direction: column;
@@ -138,9 +143,15 @@
 
 
 
-.cards{
+.cards {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
 
+.bolinhaFinal{
+  width: 12px;
+  height: 12px;
+  background-color: #897869;
+  border-radius: 50%;
+}
