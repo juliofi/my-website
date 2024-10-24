@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css'; // Importa o CSS Module
 
-const CardTimeline = ({ imagem, texto, margem }) => {
+const CardConhecimentos = ({ imagem, texto, margem }) => {
     return (
         <div className={styles.container}>
             <div style={{ marginBottom: margem }} className={styles.card}>
@@ -27,4 +27,4 @@ const CardTimeline = ({ imagem, texto, margem }) => {
     );
 };
 
-export default CardTimeline;
+export default CardConhecimentos;

@@ -1,0 +1,29 @@
+.sliderContainer {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+    border: 1px solid #CDBAA9;
+  }
+  
+  .progressBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 8px;
+    background-color: #CDBAA9; /* A cor da linha de progresso */
+
+  }
+  

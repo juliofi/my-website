@@ -1,0 +1,58 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: #F3EDE6; /* Cor do fundo do card */
+    border-radius: 16px; /* Borda arredondada */
+    padding: 30px;
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    flex-direction: column;
+    justify-content: flex-start; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    border: 1px solid #CDBAA9;
+    gap: 30px;
+  }
+  
+  .texto {
+    width: 400px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #897869; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: 500;
+    text-align: justify; /* Centraliza o texto */
+    line-height: 1.1;
+  }
+
+  .imagem{
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    border-radius: 16px;
+    border: 1px solid #CDBAA9;
+  }
+
+  .audio{
+    margin-top: 360px;
+    width: 80px;
+  }
+
+  .audio svg {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .audio svg:hover {
+    transform: scale(1.1);
+  }
+
+
+
+  

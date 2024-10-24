@@ -1,7 +1,7 @@
 import React from 'react';
 import Lottie from 'lottie-react';
 import Julio from '../../assets/julio.json'
-import Card from '../../components/card'; // Importa o componente Card
+import CardHome from '../../components/cardHome'; // Importa o componente Card
 import Contato from '../../components/contato'; // Importa o componente Contato
 import { Link } from 'react-router-dom';
 import styles from './styles.module.css'
@@ -20,13 +20,13 @@ function Home() {
       <div className={styles.cardsContainer}>
         {/* Links para as páginas */}
         <Link to="/conhecimentos">
-          <Card nome="Conhecimentos" imagem={Conhecimentos}/>
+          <CardHome nome="Conhecimentos" imagem={Conhecimentos}/>
         </Link>
         <Link to="/portifolio">
-          <Card nome="Portifólio" imagem={Portifolio}/>
+          <CardHome nome="Portifólio" imagem={Portifolio}/>
         </Link>
         <Link to="/sobremim">
-          <Card nome="Sobre mim" imagem={Sobremim}/>
+          <CardHome nome="Sobre mim" imagem={Sobremim}/>
         </Link>
       </div>
       <Contato />

@@ -2,77 +2,65 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './styles.module.css'; // Importa o CSS Modules
 import puc from '../../assets/PUCRS.jpeg'; // Importa a imagem
-import poo from '../../assets/poo.jpg';
-import ferias from '../../assets/ferias.jpg';
-import ages from '../../assets/ages.jpg';
-import rocketseat from '../../assets/rocketseat.jpg';
-import destaque from '../../assets/destaque.jpg';
-import memorisely from '../../assets/memorisely.jpg';
-import CertificadosAlura from '../../components/certificadosAlura';
-import CertificadosRocketseat from '../../components/certificadosRocketseat';
-import CardTimeline from '../../components/cardTimeline';
+import imagem2 from '../../assets/imagem2.jpg';
+import imagem3 from '../../assets/imagem3.jpg';
+import imagem4 from '../../assets/imagem4.jpg';
+import imagem5 from '../../assets/imagem5.jpg';
+import imagem6 from '../../assets/imagem6.jpg';
+import imagem7 from '../../assets/imagem7.jpg';
+import CardSobremim from '../../components/cardSobremim';
 import Titulo from '../../components/titulo';
 import Bolinha from '../../components/bolinha';
 
-function SobreMim() {
+function Sobremim() {
+  // As imagens que deseja passar para o CardSobremim
+  const imagensCard1 = [imagem2, imagem3];
+  const imagensCard2 = [imagem4, imagem5, imagem6, imagem7];
+
   return (
     <div className={styles.conhecimentosContainer}>
       <header className={styles.header}>
         <Link to="/" className={styles.link}>
-          <svg
-            width="70"
-            height="70"
-            viewBox="0 0 70 70"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clipPath="url(#clip0_633_1498)">
-              <path
-                d="M-8.46349e-05 48.09C0.046582 46.9234 0.489915 45.92 1.32992 45.08L10.0799 36.33C10.7332 35.63 11.5032 35.21 12.3899 35.07C13.2766 34.93 14.0932 35.0234 14.8399 35.35C15.5866 35.6767 16.2166 36.2134 16.7299 36.96C17.2432 37.7067 17.4999 38.5234 17.4999 39.41V43.75H56.9099C58.0766 43.75 59.1032 43.33 59.9899 42.49C60.8766 41.65 61.2966 40.6234 61.2499 39.41V21.91C61.2499 20.6967 60.8299 19.67 59.9899 18.83C59.1499 17.99 58.1233 17.5467 56.9099 17.5H21.9099C20.8366 17.5 19.9266 17.1967 19.1799 16.59C18.4332 15.9834 17.9666 15.26 17.7799 14.42C17.5932 13.58 17.5932 12.74 17.7799 11.9C17.9666 11.06 18.4332 10.3134 19.1799 9.66003C19.9266 9.00669 20.8366 8.70336 21.9099 8.75003H56.9099C60.5033 8.75003 63.5832 10.0334 66.1499 12.6C68.7166 15.1667 69.9999 18.27 69.9999 21.91V39.41C69.9999 43.05 68.7166 46.13 66.1499 48.65C63.5832 51.17 60.5033 52.4534 56.9099 52.5H17.4999V56.91C17.4999 57.8434 17.2432 58.6834 16.7299 59.43C16.2166 60.1767 15.5632 60.69 14.7699 60.97C13.9766 61.25 13.1599 61.32 12.3199 61.18C11.4799 61.04 10.7332 60.6434 10.0799 59.99L1.32992 51.24C0.396582 50.3534 -0.0467513 49.3034 -8.46349e-05 48.09Z"
-                fill="#897869"
-              />
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clipPath="url(#clip0_633_1590)">
+              <path d="M-6.04535e-05 34.3499C0.0332729 33.5166 0.349939 32.7999 0.949939 32.1999L7.19994 25.9499C7.66661 25.4499 8.21661 25.1499 8.84994 25.0499C9.48327 24.9499 10.0666 25.0166 10.5999 25.2499C11.1333 25.4832 11.5833 25.8666 11.9499 26.3999C12.3166 26.9332 12.4999 27.5166 12.4999 28.1499V31.2499H40.6499C41.4833 31.2499 42.2166 30.9499 42.8499 30.3499C43.4833 29.7499 43.7833 29.0166 43.7499 28.1499V15.6499C43.7499 14.7832 43.4499 14.0499 42.8499 13.4499C42.2499 12.8499 41.5166 12.5332 40.6499 12.4999H15.6499C14.8833 12.4999 14.2333 12.2832 13.6999 11.8499C13.1666 11.4166 12.8333 10.8999 12.6999 10.2999C12.5666 9.69992 12.5666 9.09992 12.6999 8.49992C12.8333 7.89992 13.1666 7.36658 13.6999 6.89992C14.2333 6.43325 14.8833 6.21658 15.6499 6.24992H40.6499C43.2166 6.24992 45.4166 7.16658 47.2499 8.99992C49.0833 10.8332 49.9999 13.0499 49.9999 15.6499V28.1499C49.9999 30.7499 49.0833 32.9499 47.2499 34.7499C45.4166 36.5499 43.2166 37.4666 40.6499 37.4999H12.4999V40.6499C12.4999 41.3166 12.3166 41.9166 11.9499 42.4499C11.5833 42.9832 11.1166 43.3499 10.5499 43.5499C9.98327 43.7499 9.39994 43.7999 8.79994 43.6999C8.19994 43.5999 7.66661 43.3166 7.19994 42.8499L0.949939 36.5999C0.283273 35.9666 -0.0333938 35.2166 -6.04535e-05 34.3499Z" fill="#897869" />
             </g>
             <defs>
-              <clipPath id="clip0_633_1498">
-                <rect width="70" height="70" fill="white" />
+              <clipPath id="clip0_633_1590">
+                <rect width="50" height="50" fill="white" />
               </clipPath>
             </defs>
           </svg>
         </Link>
       </header>
+
       <div className={styles.bodyContainer}>
         <div className={styles.titulos}>
-          <Titulo margem="634px" titulo="PUCRS" subtitulo="26/02/2023" />
-          <Titulo margem="652px" titulo="Alura" subtitulo="06/09/2023" />
-          <Titulo margem="638px" titulo="Férias" subtitulo="13/12/2023" />
-          <Titulo margem="682px" titulo="AGES" subtitulo="26/02/2024" />
-          <Titulo margem="682px" titulo="Rocketseat" subtitulo="23/03/2024" />
-          <Titulo margem="568px" titulo="Projeto Destaque" subtitulo="04/07/2024" />
-          <Titulo margem="160px" titulo="Memorisely" subtitulo="04/07/2024" />
+          <Titulo margem="678px" titulo="Quem sou eu?" subtitulo="" />
+          <Titulo margem="848px" titulo="2021" subtitulo="" />
+          <Titulo margem="684px" titulo="2022/1" subtitulo="" />
+          <Titulo margem="754px" titulo="2022/2" subtitulo="" />
+          <Titulo margem="634px" titulo="Porque escolhi Engenharia de Software" subtitulo="" />
         </div>
         <div className={styles.line}>
-          <Bolinha margem="680px"/>
-          <Bolinha margem="700px"/>
-          <Bolinha margem="680px"/>
-          <Bolinha margem="730px"/>
-          <Bolinha margem="730px"/>
-          <Bolinha margem="620px"/>
-
-       
+          <Bolinha margem="712px" />
+          <Bolinha margem="880px" />
+          <Bolinha margem="716px" />
+          <Bolinha margem="830px" />
+          <div className={styles.bolinhaFinal} />
         </div>
         <div className={styles.cards}>
-          <CardTimeline margem="160px" imagem={puc} texto="Aos meus 18 anos, entrei na faculdade de Engenharia de Software na PUCRS. Lá tive meu primeiro contato com programação, na linguagem Java com a cadeira de Fundamentos da Programação, além de outras cadeiras fundamentais sobre a computação." />
-          <CardTimeline margem="160px" imagem={poo} texto="Já no segundo semestre da faculdade, estava me aprofundando na programação com a cadeira de Programação Orientada a Objetos. Querendo saber mais sobre o conteúdo, assinei o plano da Alura, onde pude aprender muito mais rápido e de forma didática a lógica de programação, e futuramente outros conteúdos além da faculdade." />
-          <CardTimeline margem="160px" imagem={ferias} texto="Durante o período das férias de verão pude aproveitar muito os cursos da Alura e aprender conteúdos fora da faculdade. Foi quando conheci o desenvolvimento web. Aprendi HTML, CSS e Javascript, e comecei a fazer meus primeiros projetos pessoais." />
-          <CardTimeline margem="160px" imagem={ages} texto="Já aos 19 anos, no terceiro semestre, comecei a cursar a cadeira AGES 1 (Agência Experimental de Software), que foi para mim a melhor cadeira da faculdade até hoje. Nela, recebemos um cliente e trabalhamos no método SCRUM para desenvolver um MVP da proposta trazida pelo cliente. O nosso projeto,
-Polimatech, era uma plataforma para vestibulandos e estudantes do ensino médio." />
-          <CardTimeline margem="160px" imagem={rocketseat} texto="Após decidirmos as tecnologias na AGES, senti ainda mais a necessidade de aprender React, já queria dar esse passo no desenvolvimento web e assinei a plataforma da RocketSeat, onde já havia participado de um evento gratuito e gostei muito da didática deles. Durante esse terceiro semestre pude me aprofundar muito em React para o front-end e gostei muito de poder trabalhar em equipe na AGES." />
-          <CardTimeline margem="160px" imagem={destaque} texto="No final do semestre acontece uma votação para eleger o melhor projeto da AGES e felizmente fomos premiados! " />
-          <CardTimeline margem="160px" imagem={memorisely} texto="Depois do projeto da AGES me interessei muito por UI Design, queria aprender boas práticas para criar uma interface intuitiva e aprimorar minhas habilidades com o Figma. Foi aí que assinei o Memorisely e pude me aprofundar muito com a plataforma sobre UX/UI Design." />
+          {/* Passa as imagens como propriedade */}
+          <CardSobremim margem="160px" imagens={imagensCard1} texto="Me chamo Julio, tenho 19 anos e estou no 4º semestre de Engenharia de Software na PUCRS. Gosto muito de ficar no computador assistindo videos sobre computação e sobre setup. A seguir vou apresentar um pouco da minha trajetória até aqui e também mostrar porque escolhi a Engenharia de Software." />
+          <CardSobremim margem="160px" imagens={imagensCard2} texto="Em 2021, entrei no universo da revenda de tênis limitados, chamado Resell. Explicando de forma resumida, existem tênis que são extremamente limitados e ao mesmo tempo desejados. Esses tênis são quase impossíveis de comprar no seu lançamento, pois esgotam em segundos, e assim que são esgotados já podem ser revendidos por bem mais que o preço do lançamento. Por isso, eu e a comunidade inteira do resell usávamos bots para conseguir comprar vários pares no lançamento e revender mais caro depois que esgotassem. Era uma concorrência, quem tivesse o bot com melhor eficiência, maior agilidade e melhores proxies (necessário para burlar o anti-bot do site) conseguia comprar mais pares" />
+          <CardSobremim margem="160px" imagens={imagensCard2} texto="Entre o final de 2021 e a metade de 2022 eu estava muito avançado no resell. Já tinha várias amizades com pessoas do ramo e com programadores que faziam os bots. Nessa época tive grandes resultados, pois chegava a rodar vários bots simultaneamente e já tinha mais dinheiro acumulado para um estoque maior" />
+          <CardSobremim margem="160px" imagens={imagensCard2} texto="Na metade de 2022 tive que dar adeus ao resell. Todas essas vendas que fazia através dos marketplaces(droper, stockx e até mercado livre) eram no nome da minha mãe porque eu tinha 17 anos. E como ela viu que estava movimentando muito (já tinha passado dos 100k de faturamento), não deixou mais eu usar o nome dela pras plataformas porque nunca declarei nada sobre imposto de renda e etc. O resell nessa época também deu uma enfraquecida, os preços de lançamento subiram, as quantidades de pares subiram e a demanda manteve a mesma." />
+          <CardSobremim margem="160px" imagens={imagensCard2} texto="O resell foi o período mais marcante da minha vida. Durante o período que eu contabilizava o lucro (acredito que por agosto de 21) tirando os meus gastos havia lucrado mais ou menos R$36.000, durante todo o período passa com certeza dos 50k. Porém esse lucro seria ainda maior se o preço dos bots não fosse tão caro, custam R$700, R$500 por mês e gastava com mais outras ferramentas como monitores do site e proxies. Gastava uns R$1500 todos os meses para manter as ferramentas e foi aí que vi o quão poderoso é saber criar uma ferramenta com programação. Os donos dos bots faturavam pelo menos 20k e o custo também era muito baixo, era muito mais vantajoso da parte deles pois eles ganhavam fixo parte do lucro de toda comunidade e ainda conseguiam pegar muitos pares pois sabiam usar muito bem o próprio bot. Nessa época, não sabia nada sobre programação e nem imaginava como e onde iria trabalhar, mas com certeza seria desenvolvendo ferramentas e aplicativos para trazer funcionalidade pra vida das pessoas. " />
+
         </div>
       </div>
     </div>
   );
 }
 
-export default SobreMim;
+export default Sobremim;
