@@ -69,17 +69,17 @@ function Conhecimentos() {
       </header>
       <div className={styles.bodyContainer}>
         <div className={styles.titulos}>
-          <Titulo margem="634px" titulo="PUCRS" subtitulo="26/02/2023" />
-          <Titulo margem="634px" titulo="Alura" subtitulo="06/09/2023" />
-          <Titulo margem="956px" titulo="Férias" subtitulo="13/12/2023" />
-          <Titulo margem="682px" titulo="AGES" subtitulo="26/02/2024" />
+          <Titulo margem="638px" titulo="PUCRS" subtitulo="26/02/2023" />
+          <Titulo margem="648px" titulo="Alura" subtitulo="06/09/2023" />
+          <Titulo margem="962px" titulo="Férias" subtitulo="13/12/2023" />
+          <Titulo margem="686px" titulo="AGES" subtitulo="26/02/2024" />
           <Titulo margem="1010px" titulo="Rocketseat" subtitulo="23/03/2024" />
-          <Titulo margem="540px" titulo="Projeto Destaque" subtitulo="04/07/2024" />
+          <Titulo margem="552px" titulo="Projeto Destaque" subtitulo="04/07/2024" />
           <Titulo margem="160px" titulo="Memorisely" subtitulo="04/07/2024" />
         </div>
         <div className={styles.line}>
           <Bolinha margem="692px" />
-          <Bolinha margem="688px" />
+          <Bolinha margem="698px" />
           <Bolinha margem="1008px" />
           <Bolinha margem="740px" />
           <Bolinha margem="1080px" />

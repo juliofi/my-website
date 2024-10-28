@@ -31,7 +31,7 @@ function Sobremim() {
   const imagensCard5 = [imagem16, imagem17];
 
   return (
-    <div className={styles.conhecimentosContainer}>
+    <div className={styles.sobremimContainer}>
       <header className={styles.header}>
         <Link to="/" className={styles.link}>
           <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,14 +49,14 @@ function Sobremim() {
 
       <div className={styles.bodyContainer}>
         <div className={styles.titulos}>
-          <Titulo margem="678px" titulo="Quem sou eu?" subtitulo="" />
-          <Titulo margem="848px" titulo="2021" subtitulo="" />
+          <Titulo margem="670px" titulo="Quem sou eu?" subtitulo="" />
+          <Titulo margem="850px" titulo="2021" subtitulo="" />
           <Titulo margem="684px" titulo="2022/1" subtitulo="" />
-          <Titulo margem="754px" titulo="2022/2" subtitulo="" />
+          <Titulo margem="748px" titulo="2022/2" subtitulo="" />
           <Titulo margem="634px" titulo="Porque escolhi Engenharia de Software" subtitulo="" />
         </div>
         <div className={styles.line}>
-          <Bolinha margem="712px" />
+          <Bolinha margem="702px" />
           <Bolinha margem="880px" />
           <Bolinha margem="716px" />
           <Bolinha margem="830px" />
