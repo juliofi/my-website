@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './styles.module.css'; // Importa o CSS Module
 import ImageSlider from '../imageSlider';
 
 const CardSobremim = ({ imagens, texto, margem, audio }) => {
+    const audioRef = useRef(null); // Usando useRef para armazenar o áudio
+
     const playAudio = () => {
-        const audioElement = new Audio(audio);
-        audioElement.play();
+        if (audioRef.current) {
+            audioRef.current.pause(); // Pausa o áudio caso esteja tocando
+            audioRef.current.currentTime = 0; // Reseta o áudio para o início
+        }
+        audioRef.current = new Audio(audio); // Cria um novo áudio
+        audioRef.current.play(); // Toca o áudio
     };
 
     return (
