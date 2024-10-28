@@ -35,11 +35,12 @@
 
 .bodyContainer {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   width: 80%;
-  gap: 60px;
+  gap: 100px;
+  margin-bottom: 144px;
 }
 
 .container {

@@ -1,16 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './styles.module.css'; // Importa o CSS Modules
 import discord from '../../assets/discord.jpg';
-import video from '../../assets/video.mp4'; // Importe o vídeo
+import FlipCard from '../../components/cardPortifolio'; // Importe o novo componente FlipCard
+import videoDiscord from '../../assets/videoDiscord.mp4'; // Importe o vídeo
+import videoFigma from '../../assets/videoFigma.mp4'
+import porti from '../../assets/porti.jpg'
 
 function Portifolio() {
-  const [flipped, setFlipped] = useState(false);
-
-  const handleFlip = () => {
-    setFlipped(!flipped);
-  };
-
   return (
     <div className={styles.portifolioContainer}>
       <header className={styles.header}>
@@ -28,29 +25,20 @@ function Portifolio() {
         </Link>
       </header>
       <div className={styles.bodyContainer}>
-        <div className={styles.container} onClick={handleFlip}>
-          <div className={`${styles.flipCard} ${flipped ? styles.flipped : ''}`}>
-            <div className={`${styles.front} ${styles.face}`}>
-              {/* Conteúdo da frente */}
-              <img className={styles.imagem} src={discord} alt="" />
-            </div>
-            <div className={`${styles.back} ${styles.face}`}>
-              {/* Vídeo como fundo do lado de trás */}
-              <video className={styles.videoBackground} autoPlay loop muted>
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              {/* Conteúdo que aparece ao passar o mouse */}
-              <div className={styles.overlay}>
-                <div className={styles.titulo}>Monitor de Promoções</div>
-                <div className={styles.descricao}>
-                  <div className={styles.texto}>É um bot que monitora em tempo real os produtos do site Kabum e envia uma notificação no discord quando o preço muda</div>
-                  <div className={styles.texto}>Feito em python, ele faz um webscraping da página periódicamente e percorre os produtos armazenando suas informações em json. Quando verifica que alguma informação foi alterada, manda uma mensagem personalizada com todas as novas informações do produto  (como pode ver na imagem da capa)</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <FlipCard
+          imageSrc={discord}
+          title="Monitor de Promoções"
+          description1="É um bot que monitora em tempo real os produtos do site Kabum e envia uma notificação no discord quando o preço muda."
+          description2="Feito em python, ele faz um webscraping da página periodicamente e percorre os produtos armazenando suas informações em JSON. . Quando alguma informação fo alterada, manda uma mensagem personalizada com todas as novas informações do produto  (como pode ver na imagem da capa)."
+          video={videoDiscord}
+        />
+         <FlipCard
+          imageSrc={porti}
+          title="Minha Página"
+          description1="Desenvolvi essa página inicialmente no figma usando meus conhecimentos de UX/UI Design que aprendi com os cursos do Memorisely. Foi usado React com javascript e o deploy com Vercel."
+          description2=" "
+          video={videoFigma}
+        />
       </div>
     </div>
   );
