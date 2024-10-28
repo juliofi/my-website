@@ -14,20 +14,16 @@
   justify-content: flex-start;
   color: #5A4634;
   min-height: 100vh;
-  /* Garante que a página ocupe pelo menos a altura total da viewport */
   width: 100%;
   overflow-x: hidden;
-  /* Remove qualquer barra de rolagem horizontal */
   gap: 80px;
 }
 
 .header {
   position: -webkit-sticky;
-  /* Para Safari */
   position: sticky;
   top: 0;
   z-index: 1000;
-  /* Garantir que o header fique acima do restante do conteúdo */
   text-align: center;
   font-size: 24px;
   padding: 60px 0px 0px 120px;
@@ -49,7 +45,7 @@
 .container {
   width: 800px;
   height: 450px;
-  perspective: 1000px; /* Dá a sensação de profundidade para a rotação */
+  perspective: 1000px;
   border-radius: 16px;
 }
 
@@ -79,8 +75,11 @@
   flex-direction: column;
   border-radius: 16px;
   padding: 30px;
-  border: 1px solid red;
   background-color: #F3EDE6;
+}
+
+.front:hover{
+  opacity: 95%;
 }
 
 .back {
@@ -91,7 +90,7 @@
   border-radius: 16px;
   padding: 30px;
   background-color: #F3EDE6;
-  position: relative; /* Garante que o vídeo seja posicionado corretamente */
+  position: relative;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -103,8 +102,56 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garante que o vídeo preencha o fundo sem distorcer */
-  z-index: -1; /* Coloca o vídeo atrás de qualquer outro conteúdo */
+  object-fit: cover;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+/* Div sempre visível no backside */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85); /* Layer branco transparente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 72px;
+  border: 1px solid #51473e;
+  border-radius: 16px;
+  gap: 48px;
+  opacity: 1; /* Sempre visível */
+}
+
+/* Título "Projeto" */
+.titulo {
+  font-size: 40px;
+  color: #51473e;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.descricao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: justify;
+  gap: 24px;
+
+}
+
+.texto{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.pergunta{
+  font-weight: 600;
 }
 
 .imagem {

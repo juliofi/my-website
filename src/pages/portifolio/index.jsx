@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './styles.module.css'; // Importa o CSS Modules
-import discord from '../../assets/discord.jpg'
+import discord from '../../assets/discord.jpg';
 import video from '../../assets/video.mp4'; // Importe o vídeo
 
 function Portifolio() {
-  // Movendo o estado para o componente Portifolio
   const [flipped, setFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -36,12 +35,19 @@ function Portifolio() {
               <img className={styles.imagem} src={discord} alt="" />
             </div>
             <div className={`${styles.back} ${styles.face}`}>
-              {/* Conteúdo de trás */}
               {/* Vídeo como fundo do lado de trás */}
               <video className={styles.videoBackground} autoPlay loop muted>
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+              {/* Conteúdo que aparece ao passar o mouse */}
+              <div className={styles.overlay}>
+                <div className={styles.titulo}>Monitor de Promoções</div>
+                <div className={styles.descricao}>
+                  <div className={styles.texto}>É um bot que monitora em tempo real os produtos do site Kabum e envia uma notificação no discord quando o preço muda</div>
+                  <div className={styles.texto}>Feito em python, ele faz um webscraping da página periódicamente e percorre os produtos armazenando suas informações em json. Quando verifica que alguma informação foi alterada, manda uma mensagem personalizada com todas as novas informações do produto  (como pode ver na imagem da capa)</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
