@@ -1,6 +1,6 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-import styles from './styles.module.css'; // Estilos para o componente
+import styles from './styles.module.css';
 
 const Certificados = ({ certificadosFotos, margem }) => {
   return (

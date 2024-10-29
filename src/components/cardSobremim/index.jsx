@@ -1,23 +1,22 @@
 import React, { useRef } from 'react';
-import styles from './styles.module.css'; // Importa o CSS Module
+import styles from './styles.module.css'; 
 import ImageSlider from '../imageSlider';
 
 const CardSobremim = ({ imagens, texto, margem, audio }) => {
-    const audioRef = useRef(null); // Usando useRef para armazenar o áudio
+    const audioRef = useRef(null); 
 
     const playAudio = () => {
         if (audioRef.current) {
-            audioRef.current.pause(); // Pausa o áudio caso esteja tocando
-            audioRef.current.currentTime = 0; // Reseta o áudio para o início
+            audioRef.current.pause();
+            audioRef.current.currentTime = 0;
         }
-        audioRef.current = new Audio(audio); // Cria um novo áudio
-        audioRef.current.play(); // Toca o áudio
+        audioRef.current = new Audio(audio);
+        audioRef.current.play();
     };
 
     return (
         <div className={styles.container}>
             <div style={{ marginBottom: margem }} className={styles.card}>
-                {/* Passa o array de imagens para o ImageSlider */}
                 <ImageSlider images={imagens} />
                 <div className={styles.texto}>
                     {texto}

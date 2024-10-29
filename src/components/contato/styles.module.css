@@ -3,19 +3,19 @@
     align-items: center;
     justify-content: center;
     height: 50px;
-    color: #D9CBBF; /* Cor principal */
+    color: #D9CBBF;
     gap: 16px;
 
   }
   
   .icon {
-    color: #D9CBBF; /* Cor dos ícones */
-    text-decoration: none; /* Remove o sublinhado do link */
+    color: #D9CBBF; 
+    text-decoration: none;
     cursor: pointer;
   }
   
   .icon:hover {
-    color: #C1A994; /* Efeito de hover (opcional) */
+    color: #C1A994;
   }
   
   .info {
@@ -25,24 +25,24 @@
     align-items: flex-start;
     justify-content: center;
     font-size: 1rem;
-    color: #D9CBBF; /* Cor do texto */
+    color: #D9CBBF;
     line-height: 1.6;
     margin-top: -8px;
   }
   
 
   .ancora {
-    color: #D9CBBF; /* Cor padrão */
-    text-decoration: none; /* Remove o sublinhado */
+    color: #D9CBBF; 
+    text-decoration: none; 
     cursor: pointer;
   }
   
   .ancora:hover {
-    color: #C1A994; /* Cor ao passar o mouse */
+    color: #C1A994;
   }
   
   .ancora:active {
-    color: #C1A994; /* Cor ao clicar */
+    color: #C1A994;
   }
   
   .ancora:focus {
@@ -50,7 +50,7 @@
   }
   
   .ancora:visited {
-    color: #D9CBBF; /* Cor se o link já foi visitado */
+    color: #D9CBBF;
   }
   
 

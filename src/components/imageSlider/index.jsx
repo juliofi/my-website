@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import styles from './styles.module.css'; // Importa o CSS Module
+import styles from './styles.module.css'; 
 
 const ImageSlider = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -8,15 +8,15 @@ const ImageSlider = ({ images }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 5000); // 5 segundos para cada imagem
+    }, 5000);
 
-    return () => clearInterval(interval); // Cleanup interval
+    return () => clearInterval(interval); 
   }, [images.length]);
 
   return (
     <div className={styles.sliderContainer}>
       <div className={styles.imageContainer}>
-        <AnimatePresence mode="wait"> {/* Substitui o exitBeforeEnter */}
+        <AnimatePresence mode="wait">
           <motion.img
             key={currentImage}
             src={images[currentImage]}
@@ -29,8 +29,7 @@ const ImageSlider = ({ images }) => {
           />
         </AnimatePresence>
       </div>
-
-      {/* Linha de Progresso */}
+      
       <motion.div
         className={styles.progressBar}
         initial={{ width: 0 }}

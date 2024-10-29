@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './styles.module.css'; // Importa o CSS Modules
-import puc from '../../assets/PUCRS.jpeg'; // Importa a imagem
+import styles from './styles.module.css'; 
+import puc from '../../assets/PUCRS.jpeg'; 
 import imagem2 from '../../assets/imagem2.jpg';
 import imagem3 from '../../assets/imagem3.jpg';
 import imagem4 from '../../assets/imagem4.jpg';
@@ -28,7 +28,6 @@ import Titulo from '../../components/titulo';
 import Bolinha from '../../components/bolinha';
 
 function Sobremim() {
-  // As imagens que deseja passar para o CardSobremim
   const imagensCard1 = [imagem2, imagem3];
   const imagensCard2 = [imagem4, imagem5, imagem6, imagem7];
   const imagensCard3 = [imagem8, imagem9, imagem10, imagem11, imagem12, imagem13];
@@ -68,7 +67,6 @@ function Sobremim() {
           <div className={styles.bolinhaFinal} />
         </div>
         <div className={styles.cards}>
-          {/* Passa as imagens como propriedade */}
           <CardSobremim margem="160px" imagens={imagensCard1} audio={audio8} texto="Me chamo Julio, tenho 19 anos e estou no 4º semestre de Engenharia de Software na PUCRS. Gosto muito de ficar no computador assistindo videos sobre computação e sobre setup. A seguir vou apresentar um pouco da minha trajetória até aqui e também mostrar porque escolhi a Engenharia de Software." />
           <CardSobremim margem="160px" imagens={imagensCard2} audio={audio9} texto="Em 2021, entrei no universo da revenda de tênis limitados, chamado Resell. Explicando de forma resumida, existem tênis que são extremamente limitados e ao mesmo tempo desejados. Esses tênis são quase impossíveis de comprar no seu lançamento, pois esgotam em segundos, e assim que são esgotados já podem ser revendidos por bem mais que o preço do lançamento. Por isso, eu e a comunidade inteira do resell usávamos bots para conseguir comprar vários pares no lançamento e revender mais caro depois que esgotassem. Era uma concorrência, quem tivesse o bot com melhor eficiência, maior agilidade e melhores proxies (necessário para burlar o anti-bot do site) conseguia comprar mais pares" />
           <CardSobremim margem="160px" imagens={imagensCard3} audio={audio10} texto="Entre o final de 2021 e a metade de 2022 eu estava muito avançado no resell. Já tinha várias amizades com pessoas do ramo e com programadores que faziam os bots. Nessa época tive grandes resultados, pois chegava a rodar vários bots simultaneamente e já tinha mais dinheiro acumulado para um estoque maior" />

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './styles.module.css'; // Importa o CSS Modules
+import styles from './styles.module.css'; 
 import discord from '../../assets/discord.jpg';
-import FlipCard from '../../components/cardPortifolio'; // Importe o novo componente FlipCard
-import videoDiscord from '../../assets/videoDiscord.mp4'; // Importe o vídeo
+import FlipCard from '../../components/cardPortifolio'; 
+import videoDiscord from '../../assets/videoDiscord.mp4'; 
 import videoFigma from '../../assets/videoFigma.mp4'
 import porti from '../../assets/porti.jpg'
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.module.css'; // Importa o CSS Module
+import styles from './styles.module.css'; 
 import { SlSocialLinkedin } from "react-icons/sl";
 import { VscGithubAlt } from "react-icons/vsc";
 
