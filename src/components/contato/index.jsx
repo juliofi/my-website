@@ -7,10 +7,10 @@ const Contato = () => {
   return (
     <div className={styles.container}>
       <a href="https://github.com/juliopontocom" target="_blank" rel="noopener noreferrer" className={styles.icon}>
-        <VscGithubAlt size={45} /> 
+        <VscGithubAlt size={36} /> 
       </a>
       <a href="https://linkedin.com/in/juliocpsf" target="_blank" rel="noopener noreferrer" className={styles.icon}>
-        <SlSocialLinkedin size={45} />
+        <SlSocialLinkedin size={36} />
       </a>
       <div className={styles.info}>
         <a className={styles.ancora}>juliocpsf@gmail.com</a>

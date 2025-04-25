@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  gap: 35px;
+  gap: 24px;
 }
 
 .cardsContainer a:hover {
@@ -15,10 +15,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 64px;
+  gap: 48px;
 }
 
 .lottie{
-  width: 300px;
-  margin: 0 auto;
+  width: 240px;
+  margin: 0;
 }
