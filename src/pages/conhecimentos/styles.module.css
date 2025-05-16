@@ -38,13 +38,19 @@
   align-items: flex-start;
   justify-content: center;
   width: 80%;
-  gap: 60px;
+  gap: 48px;
   padding-right: 116px;
+}
+
+.titulos {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
 
 }
 
 .line {
-  margin-top: 268px;
+  margin-top: 208px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,17 +135,7 @@
 
 
 
-.titulos {
-  margin-top: 254px;
-  display: flex;
-  flex-direction: column;
-
-}
-
-
-
 .cards {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }

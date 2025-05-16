@@ -1,6 +1,6 @@
 .container {
-    width: 460px;
-    padding: 30px;
+    width: 342px;
+    padding: 20px;
     background-color: #F3EDE6;
     border-radius: 16px;
     border: 1px solid #CDBAA9;
@@ -12,7 +12,7 @@
   }
   
   .certificado img {
-    height: auto;
+    height: 160px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   

@@ -10,14 +10,14 @@
 
 .titulo{
     color: #897869;
-    font-size: 44px;
+    font-size: 2.25rem;
     font-weight: 500;
     line-height: 1;
 }
 
 .subtitulo{
     color: #B09A87;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1;
 }

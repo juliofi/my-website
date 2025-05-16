@@ -74,7 +74,7 @@ function Conhecimentos() {
       </header>
       <div className={styles.bodyContainer}>
         <div className={styles.titulos}>
-          <Titulo margem="638px" titulo="PUCRS" subtitulo="26/02/2023" />
+          <Titulo margem="168px" titulo="PUCRS" subtitulo="26/02/2023" />
           <Titulo margem="648px" titulo="Alura" subtitulo="06/09/2023" />
           <Titulo margem="962px" titulo="Férias" subtitulo="13/12/2023" />
           <Titulo margem="686px" titulo="AGES" subtitulo="26/02/2024" />
@@ -83,7 +83,7 @@ function Conhecimentos() {
           <Titulo margem="160px" titulo="Memorisely" subtitulo="04/07/2024" />
         </div>
         <div className={styles.line}>
-          <Bolinha margem="692px" />
+          <Bolinha margem="506px" />
           <Bolinha margem="698px" />
           <Bolinha margem="1008px" />
           <Bolinha margem="740px" />
@@ -96,7 +96,7 @@ function Conhecimentos() {
 
         </div>
         <div className={styles.cards}>
-          <CardConhecimentos margem="160px" imagem={puc} audio={audio1} texto="Aos meus 18 anos, entrei na faculdade de Engenharia de Software na PUCRS. Lá tive meu primeiro contato com programação, na linguagem Java com a cadeira de Fundamentos da Programação, além de outras cadeiras fundamentais sobre a computação." />
+          <CardConhecimentos margem="80px" imagem={puc} audio={audio1} texto="Aos meus 18 anos, entrei na faculdade de Engenharia de Software na PUCRS. Lá tive meu primeiro contato com programação, na linguagem Java com a cadeira de Fundamentos da Programação, além de outras cadeiras fundamentais sobre a computação." />
           <CardConhecimentos margem="160px" imagem={poo} audio={audio2} texto="Já no segundo semestre da faculdade, estava me aprofundando na programação com a cadeira de Programação Orientada a Objetos. Querendo saber mais sobre o conteúdo, assinei o plano da Alura, onde pude aprender muito mais rápido e de forma didática a lógica de programação, e futuramente outros conteúdos além da faculdade." />
           <CardConhecimentos margem="60px" imagem={ferias} audio={audio3} texto="Durante o período das férias de verão pude aproveitar muito os cursos da Alura e aprender conteúdos fora da faculdade. Foi quando conheci o desenvolvimento web. Aprendi HTML, CSS e Javascript, e comecei a fazer meus primeiros projetos pessoais." />
           <Certificados margem="160px" certificadosFotos={certificadosAlura} />
