@@ -78,8 +78,8 @@ function Conhecimentos() {
           <Titulo margem="712px" titulo="Férias" subtitulo="13/12/2023" />
           <Titulo margem="516px" titulo="AGES" subtitulo="26/02/2024" />
           <Titulo margem="812px" titulo="Rocketseat" subtitulo="23/03/2024" />
-          <Titulo margem="488px" titulo="Projeto Destaque" subtitulo="04/07/2024" />
-          <Titulo margem="160px" titulo="Memorisely" subtitulo="04/07/2024" />
+          <Titulo margem="388px" titulo="Projeto Destaque" subtitulo="04/07/2024" />
+          <Titulo margem="60px" titulo="Memorisely" subtitulo="04/07/2024" />
         </div>
         <div className={styles.line}>
           <Bolinha margem="486px" /> 
@@ -87,7 +87,7 @@ function Conhecimentos() {
           <Bolinha margem="748px" />
           <Bolinha margem="560px" />
           <Bolinha margem="850px" />
-          <Bolinha margem="530px" />
+          <Bolinha margem="430px" />
           <div className={styles.bolinhaFinal} />
 
 
@@ -103,7 +103,7 @@ function Conhecimentos() {
 Polimatech, era uma plataforma para vestibulandos e estudantes do ensino médio." />
           <CardConhecimentos margem="60px" imagem={rocketseat} audio={audio5} texto="Após decidirmos as tecnologias na AGES, senti ainda mais a necessidade de aprender React, já queria dar esse passo no desenvolvimento web e assinei a plataforma da RocketSeat, onde já havia participado de um evento gratuito e gostei muito da didática deles. Durante o terceiro semestre pude me aprofundar muito em React para o front-end e gostei muito de poder trabalhar em equipe na AGES." />
           <Certificados margem="60px" certificadosFotos={certificadosRocketseat} />
-          <CardConhecimentos margem="160px" imagem={destaque} audio={audio6} texto="No final do semestre acontece uma votação para eleger o melhor projeto da AGES e felizmente fomos premiados! " />
+          <CardConhecimentos margem="60px" imagem={destaque} audio={audio6} texto="No final do semestre acontece uma votação para eleger o melhor projeto da AGES e felizmente fomos premiados! " />
           <CardConhecimentos margem="60px" imagem={memorisely} audio={audio7} texto="Depois do projeto da AGES me interessei muito por UI Design, queria aprender boas práticas para criar uma interface intuitiva e aprimorar minhas habilidades com o Figma. Foi aí que assinei o Memorisely e pude me aprofundar muito com a plataforma sobre UX/UI Design." />
           <Certificados margem="80px" certificadosFotos={certificadosMemorisely} />
         </div>
