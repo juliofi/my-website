@@ -36,8 +36,8 @@ function Portifolio() {
             video={videoDiscord}
           />
           <div className={styles.svgs}>
-            <CiCircleInfo size={36} />
-            <VscGithubAlt size={36} />
+            <a href="" className={styles.svg1} target="_blank" rel="noopener noreferrer" > <CiCircleInfo style={{ strokeWidth: 0.3 }} size={38} /></a>
+            <a href="" className={styles.svg2} target="_blank" rel="noopener noreferrer" > <VscGithubAlt size={36} /></a>
           </div>
         </div>
         <div className={styles.card}>
@@ -49,8 +49,8 @@ function Portifolio() {
             video={videoFigma}
           />
           <div className={styles.svgs}>
-            <CiCircleInfo size={36} />
-            <VscGithubAlt size={36} />
+            <a href="" className={styles.svg1} target="_blank" rel="noopener noreferrer" > <CiCircleInfo style={{ strokeWidth: 0.3 }} size={38} /></a>
+            <a href="" className={styles.svg2} target="_blank" rel="noopener noreferrer" > <VscGithubAlt size={36} /></a>
           </div>
         </div>
       </div>
