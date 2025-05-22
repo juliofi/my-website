@@ -185,6 +185,9 @@
   color: #D9CBBF;
   text-decoration: none;
   cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0px;
 }
 
 .svg2 {

@@ -1,15 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './styles.module.css';
 
-function CardPortifolio({ imageSrc, title, description1, description2, video}) {
-  const [flipped, setFlipped] = useState(false);
-
-  const handleFlip = () => {
-    setFlipped(!flipped);
-  };
-
+function CardPortifolio({ imageSrc, title, description1, description2, video, flipped, onFlip }) {
   return (
-    <div className={styles.container} onClick={handleFlip}>
+    <div className={styles.container} onClick={onFlip}>
       <div className={`${styles.flipCard} ${flipped ? styles.flipped : ''}`}>
         <div className={`${styles.front} ${styles.face}`}>
           <img className={styles.imagem} src={imageSrc} alt={title} />
