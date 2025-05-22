@@ -34,8 +34,8 @@
   }
   
   .container {
-    width: 800px;
-    height: 450px;
+    width: 640px;
+    height: 360px;
     perspective: 1000px;
     border-radius: 16px;
   }
@@ -132,14 +132,14 @@
   }
   
   .texto {
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 500;
     line-height: 1;
   }
   
   .imagem {
-    width: 800px;
-    height: 450px;
+    width: 640px;
+    height: 360px;
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid #CDBAA9;

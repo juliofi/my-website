@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './styles.module.css'; 
+import styles from './styles.module.css';
 import discord from '../../assets/discord.jpg';
-import FlipCard from '../../components/cardPortifolio'; 
-import videoDiscord from '../../assets/videoDiscord.mp4'; 
+import FlipCard from '../../components/cardPortifolio';
+import videoDiscord from '../../assets/videoDiscord.mp4';
 import videoFigma from '../../assets/videoFigma.mp4'
 import porti from '../../assets/porti.jpg'
+import { CiCircleInfo } from "react-icons/ci";
+import { VscGithubAlt } from "react-icons/vsc";
 
 function Portifolio() {
   return (
@@ -25,20 +27,32 @@ function Portifolio() {
         </Link>
       </header>
       <div className={styles.bodyContainer}>
-        <FlipCard
-          imageSrc={discord}
-          title="Monitor de Promoções"
-          description1="É um bot que monitora em tempo real os produtos do site Kabum e envia uma notificação no discord quando o preço muda."
-          description2="Feito em python, ele faz um webscraping da página periodicamente e percorre os produtos armazenando suas informações em JSON. . Quando alguma informação fo alterada, manda uma mensagem personalizada com todas as novas informações do produto  (como pode ver na imagem da capa)."
-          video={videoDiscord}
-        />
-         <FlipCard
-          imageSrc={porti}
-          title="Minha Página"
-          description1="Desenvolvi essa página inicialmente no figma usando meus conhecimentos de UX/UI Design que aprendi com os cursos do Memorisely. Foi usado React com javascript e o deploy com Vercel."
-          description2=" "
-          video={videoFigma}
-        />
+        <div className={styles.card}>
+          <FlipCard
+            imageSrc={discord}
+            title="Monitor de Promoções"
+            description1="É um bot que monitora em tempo real os produtos do site Kabum e envia uma notificação no discord quando o preço muda."
+            description2="Feito em python, ele faz um webscraping da página periodicamente e percorre os produtos armazenando suas informações em JSON. . Quando alguma informação fo alterada, manda uma mensagem personalizada com todas as novas informações do produto  (como pode ver na imagem da capa)."
+            video={videoDiscord}
+          />
+          <div className={styles.svgs}>
+            <CiCircleInfo size={36} />
+            <VscGithubAlt size={36} />
+          </div>
+        </div>
+        <div className={styles.card}>
+          <FlipCard
+            imageSrc={porti}
+            title="Minha Página"
+            description1="Desenvolvi essa página inicialmente no figma usando meus conhecimentos de UX/UI Design que aprendi com os cursos do Memorisely. Foi usado React com javascript e o deploy com Vercel."
+            description2=" "
+            video={videoFigma}
+          />
+          <div className={styles.svgs}>
+            <CiCircleInfo size={36} />
+            <VscGithubAlt size={36} />
+          </div>
+        </div>
       </div>
     </div>
   );
