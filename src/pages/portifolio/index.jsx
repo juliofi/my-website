@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './styles.module.css';
 import discord from '../../assets/discord.jpg';
+import printStartup from '../../assets/printStartup.png';
 import FlipCard from '../../components/cardPortifolio';
 import videoDiscord from '../../assets/videoDiscord.mp4';
 import videoFigma from '../../assets/videoFigma.mp4'
+import videoStartup from '../../assets/videoStartup.mp4'
 import porti from '../../assets/porti.jpg';
 import { CiCircleInfo } from "react-icons/ci";
 import { VscGithubAlt } from "react-icons/vsc";
@@ -63,8 +65,8 @@ function Portifolio() {
           <FlipCard
             imageSrc={porti}
             title="Minha Página"
-            description1="Desenvolvi essa página inicialmente no figma usando meus conhecimentos de UX/UI Design que aprendi com os cursos do Memorisely. Foi usado React com javascript e o deploy com Vercel."
-            description2=""
+            description1="Desenvolvi essa página inicialmente no figma usando meus conhecimentos de UX/UI Design que aprendi com os cursos do Memorisely."
+            description2="Foi usado React com javascript e o deploy com Vercel."
             video={videoFigma}
             flipped={flipStates[1]}
             onFlip={() => handleFlip(1)}
@@ -78,6 +80,27 @@ function Portifolio() {
             </a>
           </div>
         </div>
+
+        <div className={styles.card}>
+          <FlipCard
+            imageSrc={printStartup}
+            title="Startup Rush"
+            description1="Foi o teste técnico do programa Dell It Academy 2025. Startup Rush é uma competição de startups com 4 etapas: cadastro, batalhas, resultados e premiação"
+            description2="O frontend foi desenvolvido em React com Typescript; o backend em Springboot com java; o design foi feito no figma; o deploy foi feito no Vercel; o banco de dados em PostgreSQL."
+            video={videoStartup}
+            flipped={flipStates[2]}
+            onFlip={() => handleFlip(2)}
+          />
+          <div className={styles.svgs}>
+            <button className={styles.svg1} onClick={() => handleFlip(2)}>
+              <CiCircleInfo style={{ strokeWidth: 0.3 }} size={38} />
+            </button>
+            <a href="" className={styles.svg2} target="_blank" rel="noopener noreferrer">
+              <VscGithubAlt size={36} />
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   );
