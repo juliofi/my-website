@@ -1,17 +1,8 @@
 import React, { useRef } from 'react';
 import styles from './styles.module.css';
 
-const CardConhecimentos = ({ imagem, texto, margem, audio }) => {
-    const audioRef = useRef(null);
+const CardConhecimentos = ({ imagem, texto, margem }) => {
 
-    const playAudio = () => {
-        if (audioRef.current) {
-            audioRef.current.pause();
-            audioRef.current.currentTime = 0;
-        }
-        audioRef.current = new Audio(audio); 
-        audioRef.current.play();
-    };
 
     return (
         <div className={styles.container}>
