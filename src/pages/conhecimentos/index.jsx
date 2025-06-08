@@ -34,13 +34,6 @@ import certi20 from '../../assets/certi20.jpg';
 import certi21 from '../../assets/certi21.jpg';
 import certi22 from '../../assets/certi22.jpg';
 import certi23 from '../../assets/certi23.jpg';
-import audio1 from '../../assets/audio1.mp3'
-import audio2 from '../../assets/audio2.mp3'
-import audio3 from '../../assets/audio3.mp3'
-import audio4 from '../../assets/audio4.mp3'
-import audio5 from '../../assets/audio5.mp3'
-import audio6 from '../../assets/audio6.mp3'
-import audio7 from '../../assets/audio7.mp3'
 
 
 
