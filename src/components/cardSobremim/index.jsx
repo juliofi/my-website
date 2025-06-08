@@ -2,17 +2,7 @@ import React, { useRef } from 'react';
 import styles from './styles.module.css'; 
 import ImageSlider from '../imageSlider';
 
-const CardSobremim = ({ imagens, texto, margem, audio }) => {
-    const audioRef = useRef(null); 
-
-    const playAudio = () => {
-        if (audioRef.current) {
-            audioRef.current.pause();
-            audioRef.current.currentTime = 0;
-        }
-        audioRef.current = new Audio(audio);
-        audioRef.current.play();
-    };
+const CardSobremim = ({ imagens, texto, margem}) => {
 
     return (
         <div className={styles.container}>
