@@ -1,5 +1,5 @@
-# My Website
+# Meu site
 
-You can access at [ojulio.com.br](https://ojulio.com.br/)
+você pode acessar em [ojulio.com.br](https://ojulio.com.br/)
 
 
