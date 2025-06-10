@@ -4,10 +4,11 @@
   justify-content: center;
   text-decoration: none;
   gap: 24px;
+  margin-bottom: 24px;
 }
 
 .cardsContainer a:hover {
-  opacity: 0.8; 
+  opacity: 0.75; 
 }
 
 .container{

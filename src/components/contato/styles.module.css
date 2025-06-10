@@ -7,6 +7,13 @@
     gap: 16px;
 
   }
+
+  .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
   
   .icon {
     color: #D9CBBF; 
@@ -15,7 +22,7 @@
   }
   
   .icon:hover {
-    color: #C1A994;
+    color: #b99f89;
   }
   
   .info {
@@ -26,7 +33,7 @@
     justify-content: center;
     font-size: 1rem;
     color: #D9CBBF;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-top: -8px;
   }
   
@@ -35,11 +42,11 @@
     color: #D9CBBF; 
     text-decoration: none; 
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
   
   .ancora:hover {
-    color: #C1A994;
+    color: #b99f89;
   }
   
   .ancora:active {
