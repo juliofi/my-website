@@ -14,13 +14,6 @@ body {
   padding: 0;
   background-color: #ECE4DE;
   color: #121212;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* 2. Tema dark */
-body.dark {
-  background-color: #241D18;
-  color: #f9f9f9;
 }
 
 /* 3. Container principal */
@@ -32,16 +25,4 @@ body.dark {
   width: 100vw;
   height: 100vh;
   max-width: 1920px;
-}
-
-/* 4. Botão de toggle de tema */
-.theme-toggle {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  z-index: 1000;
 }
