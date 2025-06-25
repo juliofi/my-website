@@ -41,6 +41,28 @@ function Portifolio() {
       </header>
 
       <div className={styles.bodyContainer}>
+
+
+        <div className={styles.card}>
+          <FlipCard
+            imageSrc={printStartup}
+            title="Startup Rush"
+            description1="Foi o teste técnico do programa Dell It Academy 2025. Startup Rush é uma competição de startups com 4 etapas: cadastro, batalhas, resultados e premiação"
+            description2="O frontend foi desenvolvido em React com Typescript; o backend em Springboot com java; o design foi feito no figma; o deploy foi feito no Vercel; o banco de dados em PostgreSQL."
+            video={videoStartup}
+            flipped={flipStates[2]}
+            onFlip={() => handleFlip(2)}
+          />
+          <div className={styles.svgs}>
+            <button className={styles.svg1} onClick={() => handleFlip(2)}>
+              <CiCircleInfo style={{ strokeWidth: 0.3 }} size={38} />
+            </button>
+            <a href="https://github.com/juliofi/startupback" className={styles.svg2} target="_blank" rel="noopener noreferrer">
+              <VscGithubAlt size={36} />
+            </a>
+          </div>
+        </div>
+
         <div className={styles.card}>
           <FlipCard
             imageSrc={discord}
@@ -55,7 +77,7 @@ function Portifolio() {
             <button className={styles.svg1} onClick={() => handleFlip(0)}>
               <CiCircleInfo style={{ strokeWidth: 0.3 }} size={38} />
             </button>
-            <a href="" className={styles.svg2} target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/juliofi/monitor-kabum" className={styles.svg2} target="_blank" rel="noopener noreferrer">
               <VscGithubAlt size={36} />
             </a>
           </div>
@@ -75,27 +97,7 @@ function Portifolio() {
             <button className={styles.svg1} onClick={() => handleFlip(1)}>
               <CiCircleInfo style={{ strokeWidth: 0.3 }} size={38} />
             </button>
-            <a href="" className={styles.svg2} target="_blank" rel="noopener noreferrer">
-              <VscGithubAlt size={36} />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.card}>
-          <FlipCard
-            imageSrc={printStartup}
-            title="Startup Rush"
-            description1="Foi o teste técnico do programa Dell It Academy 2025. Startup Rush é uma competição de startups com 4 etapas: cadastro, batalhas, resultados e premiação"
-            description2="O frontend foi desenvolvido em React com Typescript; o backend em Springboot com java; o design foi feito no figma; o deploy foi feito no Vercel; o banco de dados em PostgreSQL."
-            video={videoStartup}
-            flipped={flipStates[2]}
-            onFlip={() => handleFlip(2)}
-          />
-          <div className={styles.svgs}>
-            <button className={styles.svg1} onClick={() => handleFlip(2)}>
-              <CiCircleInfo style={{ strokeWidth: 0.3 }} size={38} />
-            </button>
-            <a href="" className={styles.svg2} target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/juliofi/my-website" className={styles.svg2} target="_blank" rel="noopener noreferrer">
               <VscGithubAlt size={36} />
             </a>
           </div>
