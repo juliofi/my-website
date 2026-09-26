@@ -12,8 +12,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #F3EDE9;
-  color: #121212;
+  background-color: var(--brown-50);
+  color: var(--gray-900);
 }
 
 /* 3. Container principal */

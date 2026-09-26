@@ -15,7 +15,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 12px 12px 0px 0px;
-    border: 1px solid #CDBAA9;
+    border: 1px solid var(--brown-300);
   }
   
   .progressBar {
@@ -23,7 +23,7 @@
     bottom: 0;
     left: 0;
     height: 8px;
-    background-color: #CDBAA9; 
+    background-color: var(--brown-300); 
 
   }
   

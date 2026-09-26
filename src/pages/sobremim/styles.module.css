@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  color: #5A4634;
+  color: var(--brown-800);
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
@@ -50,7 +50,7 @@
   align-items: center;
   justify-content: flex-start;
   width: 4px;
-  background-color: #897869;
+  background-color: var(--brown-600);
   border-radius: 10px;
 }
 
@@ -75,7 +75,7 @@
 .bullet1 {
   width: 12px;
   height: 12px;
-  background-color: #897869;
+  background-color: var(--brown-600);
   border-radius: 50%;
   margin-bottom: 292px;
 }
@@ -83,7 +83,7 @@
 .bullet2 {
   width: 12px;
   height: 12px;
-  background-color: #897869;
+  background-color: var(--brown-600);
   border-radius: 50%;
   margin-bottom: 292px;
 }
@@ -91,7 +91,7 @@
 .bullet3 {
   width: 12px;
   height: 12px;
-  background-color: #897869;
+  background-color: var(--brown-600);
   border-radius: 50%;
   margin-bottom: 552px;
 }
@@ -99,7 +99,7 @@
 .bullet4 {
   width: 12px;
   height: 12px;
-  background-color: #897869;
+  background-color: var(--brown-600);
   border-radius: 50%;
   margin-bottom: 292px;
 }
@@ -107,7 +107,7 @@
 .bullet5 {
   width: 12px;
   height: 12px;
-  background-color: #897869;
+  background-color: var(--brown-600);
   border-radius: 50%;
   margin-bottom: 552px;
 }
@@ -115,7 +115,7 @@
 .bullet6 {
   width: 12px;
   height: 12px;
-  background-color: #897869;
+  background-color: var(--brown-600);
   border-radius: 50%;
   margin-bottom: 292px;
 }
@@ -123,7 +123,7 @@
 .bullet7 {
   width: 12px;
   height: 12px;
-  background-color: #897869;
+  background-color: var(--brown-600);
   border-radius: 50%;
 }
 
@@ -147,6 +147,6 @@
 .bolinhaFinal{
   width: 12px;
   height: 12px;
-  background-color: #897869;
+  background-color: var(--brown-600);
   border-radius: 50%;
 }
