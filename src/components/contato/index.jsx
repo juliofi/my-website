@@ -16,7 +16,7 @@ const Contato = () => {
       </div>
       <div className={styles.info}>
         <a className={styles.ancora}>juliocpsf@gmail.com</a>
-        <a className={styles.ancora}>997996171</a>
+        <a className={styles.ancora}>51 99799 6171</a>
       </div>
     </div>
   );

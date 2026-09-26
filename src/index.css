@@ -1,6 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 :root {
+  --brown-50: #F3EDE9;
+  --brown-100: #F3EDE6;
+  --brown-200: #dbcdbe;
+  --brown-250: #D9CBBF;
+  --brown-300: #CDBAA9;
+  --brown-400: #C1A994;
+  --brown-450: #b99f89;
+  --brown-500: #b49e8a;
+  --brown-550: #B09A87;
+  --brown-600: #897869;
+  --brown-800: #5A4634;
+  --brown-900: #ff0000;
+
+  --gray-800: rgba(21, 20, 20, 0.87);
+  --gray-900: #121212;
+
+  --blue-500: #646cff;
+  --blue-600: #535bf2;
+
+  --white-alpha-85: rgba(255, 255, 255, 0.85);
+
+  --black-alpha-10: rgba(0, 0, 0, 0.1);
+  --black-alpha-20: rgba(0, 0, 0, 0.2);
+}
+
+:root {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,8 +34,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: rgba(21, 20, 20, 0.87);
-  background-color: #F3EDE9;
+  color: var(--gray-800);
+  background-color: var(--brown-50);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,7 +47,7 @@
   justify-content: center;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,11 +56,12 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--blue-500);
   text-decoration: inherit;
 }
+
 a:hover {
-  color: #535bf2;
+  color: var(--blue-600);
 }
 
 body {

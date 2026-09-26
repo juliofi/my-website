@@ -1,0 +1,93 @@
+.timeline {
+  --dot-size: 12px;
+  --line-width: 4px;
+  --gap: 60px;
+
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto var(--dot-size) auto;
+  justify-content: center;
+  column-gap: 48px;
+  row-gap: var(--gap);
+}
+
+.item {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.label {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.resto {
+  grid-column: 3;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding-top: var(--gap);
+}
+
+.marker {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+}
+
+.marker::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  background-color: var(--brown-600);
+  translate: 0 -50%;
+}
+
+.marker::before,
+.rail {
+  background-color: var(--brown-600);
+  width: var(--line-width);
+}
+
+.marker::before {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--gap));
+  bottom: 0;
+  left: 50%;
+  translate: -50%;
+}
+
+.item:first-child .marker::before {
+  top: 50%;
+  border-radius: 10px 10px 0 0;
+}
+
+.item:last-child .marker::before {
+  bottom: 50%;
+  border-radius: 0 0 10px 10px;
+}
+
+.item:last-child .rail {
+  display: none;
+}
+
+.rail {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: center;
+}
