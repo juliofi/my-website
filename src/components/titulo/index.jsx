@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './styles.module.css';
 
-const Titulo = ({ titulo, subtitulo, margem }) => {
+const Titulo = ({ titulo, subtitulo }) => {
   return (
-    <div className={styles.texto} style={{ marginBottom: margem }}>
+    <div className={styles.texto}>
         <div className={styles.titulo}>
             {titulo}
         </div>  

@@ -1,35 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-/* Paleta de cores */
 :root {
-  /* Brown */
-  --brown-50: #F3EDE9; /* fundo da página (body, App) */
-  --brown-100: #F3EDE6; /* fundo dos cards (home, sobre mim, conhecimentos, portfólio, certificados) */
-  --brown-200: #dbcdbe; /* borda do card e da imagem na home */
-  --brown-250: #D9CBBF; /* texto e ícones do contato; ícones de link no portfólio */
-  --brown-300: #CDBAA9; /* bordas de cards, certificados e imagens; slider */
-  --brown-400: #C1A994; /* hover dos ícones no portfólio; link ativo no contato */
-  --brown-450: #b99f89; /* hover dos ícones e links no contato */
-  --brown-500: #b49e8a; /* texto do card da home */
-  --brown-550: #B09A87; /* subtítulo (componente titulo) */
-  --brown-600: #897869; /* destaque: título, bolinha, linha/bullets da timeline, setas SVG */
-  --brown-800: #5A4634; /* texto principal das páginas (sobre mim, conhecimentos, portfólio) */
-  --brown-900: #ff0000; /* título e borda do overlay do portfólio */
+  --brown-50: #F3EDE9;
+  --brown-100: #F3EDE6;
+  --brown-200: #dbcdbe;
+  --brown-250: #D9CBBF;
+  --brown-300: #CDBAA9;
+  --brown-400: #C1A994;
+  --brown-450: #b99f89;
+  --brown-500: #b49e8a;
+  --brown-550: #B09A87;
+  --brown-600: #897869;
+  --brown-800: #5A4634;
+  --brown-900: #ff0000;
 
-  /* Gray */
-  --gray-800: rgba(21, 20, 20, 0.87); /* cor padrão do texto (:root) */
-  --gray-900: #121212; /* texto do App */
+  --gray-800: rgba(21, 20, 20, 0.87);
+  --gray-900: #121212;
 
-  /* Blue */
-  --blue-500: #646cff; /* links (padrão do template Vite) */
-  --blue-600: #535bf2; /* hover dos links */
+  --blue-500: #646cff;
+  --blue-600: #535bf2;
 
-  /* White */
-  --white-alpha-85: rgba(255, 255, 255, 0.85); /* fundo do overlay do portfólio */
+  --white-alpha-85: rgba(255, 255, 255, 0.85);
 
-  /* Black */
-  --black-alpha-10: rgba(0, 0, 0, 0.1); /* sombra suave (card da home, certificados) */
-  --black-alpha-20: rgba(0, 0, 0, 0.2); /* sombra dos cards e imagens do portfólio */
+  --black-alpha-10: rgba(0, 0, 0, 0.1);
+  --black-alpha-20: rgba(0, 0, 0, 0.2);
 }
 
 :root {
