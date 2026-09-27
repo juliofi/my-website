@@ -36,3 +36,29 @@
   width: 80%;
   padding-bottom: 80px;
 }
+
+@media (max-width: 1023px) {
+  .header {
+    padding: 40px 0 0 40px;
+  }
+
+  .bodyContainer {
+    width: 100%;
+    padding: 0 24px 64px;
+  }
+}
+
+@media (max-width: 699px) {
+  .header {
+    padding: 24px 16px 0;
+  }
+
+  .header svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .bodyContainer {
+    padding: 16px 16px 48px;
+  }
+}

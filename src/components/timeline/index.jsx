@@ -16,12 +16,8 @@ export const TimelineItem = ({ titulo, subtitulo, children }) => {
       </div>
       <span className={styles.marker} aria-hidden="true" />
       <div className={styles.content}>{primeiro}</div>
-      {resto.length > 0 && (
-        <>
-          <span className={styles.rail} aria-hidden="true" />
-          <div className={styles.resto}>{resto}</div>
-        </>
-      )}
+      <span className={styles.rail} aria-hidden="true" />
+      {resto.length > 0 && <div className={styles.resto}>{resto}</div>}
     </li>
   );
 };
