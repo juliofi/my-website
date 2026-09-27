@@ -7,8 +7,9 @@
   margin-bottom: 24px;
 }
 
-.cardsContainer a:hover {
-  opacity: 0.75; 
+.cardsContainer a:hover,
+.cardsContainer a:active {
+  opacity: 0.75;
 }
 
 .container{
@@ -17,9 +18,35 @@
   align-items: center;
   justify-content: flex-start;
   gap: 48px;
+  width: 100%;
+  padding: 0 16px;
 }
 
 .lottie{
   width: 240px;
   margin: 0;
+}
+
+@media (max-width: 599px) {
+  .container {
+    gap: 32px;
+    padding: 32px 16px;
+  }
+
+  .lottie {
+    width: 180px;
+  }
+
+  .cardsContainer {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 420px;
+    gap: 12px;
+    margin-bottom: 0;
+  }
+
+  .cardsContainer a {
+    text-decoration: none;
+  }
 }

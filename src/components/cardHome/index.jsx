@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
+import { SlArrowRight } from 'react-icons/sl';
 
 const Card = ({ nome, imagem}) => {
   return (
@@ -8,6 +9,7 @@ const Card = ({ nome, imagem}) => {
         <div className={styles.texto}>
             {nome}
         </div>
+        <SlArrowRight className={styles.seta} aria-hidden="true" />
     </div>
   );
 };
